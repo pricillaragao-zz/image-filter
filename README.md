@@ -1,3 +1,6 @@
-# Starter
+# Image Filter
 
-Starting point for my projects
+Manipulate your images: 
+- blur
+- size
+- color

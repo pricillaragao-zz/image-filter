@@ -1,8 +1,7 @@
 {
-  "name": "starter",
+  "name": "image-filter",
   "version": "1.0.0",
-  "description": "Starting point for my projects",
-  "main": "index.js",
+  "description": "Manipulate your images blur, size and color",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint --fix .",
@@ -10,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pricillaragao/starter.git"
+    "url": "git+https://github.com/pricillaragao/image-filter.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pricilla Patricia de Aragao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pricillaragao/starter/issues"
+    "url": "https://github.com/pricillaragao/image-filter/issues"
   },
-  "homepage": "https://github.com/pricillaragao/starter#readme",
+  "homepage": "https://github.com/pricillaragao/image-filter#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
