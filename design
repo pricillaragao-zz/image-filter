@@ -1,0 +1,9 @@
+Manipulate the blur
+- Click and slide the button
+- Slide to the left for reduce the and slide to the right for increase the blur
+- When the user move the slider left the variable blur decrease
+- When the user move the slider right the variable blur increase
+Manipulate image size
+Manipulate border color 
+
+

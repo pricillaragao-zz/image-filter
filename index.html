@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width"
+      initial-scale="1"
+      viewport-fit="cover"
+    />
+    <title>Image Filter</title>
+
+    <meta
+      name="description"
+      content="Manipulate your images blur, size and color."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h2>Edit your image here:</h2>
+
+    <div class="controls">
+      <label for="size">Size:</label>
+      <input
+        id="slidersize"
+        type="range"
+        name="size"
+        min="10"
+        max="200"
+        value="10"
+        data-size="px"
+      />
+
+      <label for="blur">Blur:</label>
+      <input
+        id="sliderblur"
+        type="range"
+        name="blur"
+        min="0"
+        max="25"
+        value="10"
+        data-size="px"
+      />
+
+      <label for="color">Color:</label>
+      <input type="color" name="color" value="blue" />
+
+      <img src="pittaway.jpg" />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

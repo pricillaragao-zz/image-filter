@@ -1,0 +1,11 @@
+:root {
+  --color: red;
+  --size: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--size);
+  background: var(--color);
+  filter: blur(var(--blur));
+}
