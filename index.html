@@ -28,14 +28,13 @@
     <h2>Edit your image here: &#128522;</h2>
 
     <div class="controls">
-      <label for="size">Size:</label>
+      <label for="size">Border size:</label>
       <input
         id="slidersize"
         type="range"
         name="size"
         min="10"
         max="200"
-        value="10"
         data-size="px"
       />
 
@@ -46,17 +45,44 @@
         name="blur"
         min="0"
         max="25"
-        value="10"
         data-size="px"
       />
 
-      <label for="color">Color:</label>
-      <input id="change-color" type="color" name="color" value="blue" />
+      <label for="grayscale">Grayscale:</label>
+      <input
+        id="grayscale"
+        type="range"
+        name="grayscale"
+        min="0"
+        max="100"
+        data-size="%"
+      />
 
-      <!-- <div><img src="pittaway.jpg" /></div> -->
+      <label for="contrast">Contrast:</label>
+      <input
+        id="contrast"
+        type="range"
+        name="contrast"
+        min="40"
+        max="200"
+        data-size="%"
+      />
+
+      <label for="hue-rotate">Hue:</label>
+      <input
+        id="hue-rotate"
+        type="range"
+        name="hue-rotate"
+        min="0"
+        max="180"
+        data-size="deg"
+      />
+
+      <label for="color">Color:</label>
+      <input id="change-color" type="color" name="color" />
     </div>
     <div>
-      <img id="myImg" src="#" alt="your image" /> <br />
+      <img id="myImg" src="#" alt="" /> <br />
       <input class="tab" type="file" class="custom-file-input" />
     </div>
 
