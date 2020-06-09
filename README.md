@@ -1,6 +1,7 @@
 # Image Filter
 
-Manipulate your images: 
+Manipulate your images:
+
 - blur
 - size
 - color
