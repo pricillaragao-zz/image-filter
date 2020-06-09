@@ -18,10 +18,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+    </style>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-    <h2>Edit your image here:</h2>
+    <h2>Edit your image here: &#128522;</h2>
 
     <div class="controls">
       <label for="size">Size:</label>
@@ -49,8 +53,13 @@
       <label for="color">Color:</label>
       <input id="change-color" type="color" name="color" value="blue" />
 
-      <img src="pittaway.jpg" />
+      <!-- <div><img src="pittaway.jpg" /></div> -->
     </div>
+    <div>
+      <img id="myImg" src="#" alt="your image" /> <br />
+      <input class="tab" type="file" class="custom-file-input" />
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

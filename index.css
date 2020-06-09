@@ -2,10 +2,29 @@
   --color: red;
   --size: 10px;
   --blur: 10px;
+  text-align: center;
+  font-family: "Boogaloo", cursive;
+  color: rgb(196, 160, 196);
+  font-size: 20px;
 }
 
 img {
   padding: var(--size);
   background: var(--color);
   filter: blur(var(--blur));
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 10%;
+  background: rgb(196, 160, 196);
+}
+
+.custom-file-input {
+  color: transparent;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 40px;
 }
