@@ -27,17 +27,19 @@
   <body>
     <h2>Edit your image here: &#128522;</h2>
 
-    <div class="controls">
+    <div class="controls flex flex-column">
       <label for="size">Border size:</label>
       <input
         id="slidersize"
         type="range"
         name="size"
-        min="10"
-        max="200"
+        min="0"
+        max="40"
         data-size="px"
       />
+    </div>
 
+    <div>
       <label for="blur">Blur:</label>
       <input
         id="sliderblur"
@@ -47,7 +49,9 @@
         max="25"
         data-size="px"
       />
+    </div>
 
+    <div>
       <label for="grayscale">Grayscale:</label>
       <input
         id="grayscale"
@@ -57,7 +61,9 @@
         max="100"
         data-size="%"
       />
+    </div>
 
+    <div>
       <label for="contrast">Contrast:</label>
       <input
         id="contrast"
@@ -67,7 +73,9 @@
         max="200"
         data-size="%"
       />
+    </div>
 
+    <div>
       <label for="hue-rotate">Hue:</label>
       <input
         id="hue-rotate"
@@ -77,13 +85,16 @@
         max="180"
         data-size="deg"
       />
-
-      <label for="color">Color:</label>
-      <input id="change-color" type="color" name="color" />
     </div>
+
+    <div class="input-color-container">
+      <label for="color">Color:</label>
+      <input id="change-color" type="color" name="color" class="input-color" />
+    </div>
+
     <div>
-      <img id="myImg" src="#" alt="" /> <br />
-      <input class="tab" type="file" class="custom-file-input" />
+      <img id="myImg" src="#" alt="" class="img-responsive" /> <br />
+      <input type="file" class="custom-file-input" />
     </div>
 
     <script src="index.js"></script>
