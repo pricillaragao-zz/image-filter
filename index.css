@@ -5,12 +5,8 @@
   --grayscale: 0%;
   --contrast: 100%;
   --hue-rotate: 0deg;
-  text-align: center;
-  font-family: "Boogaloo", cursive;
-  color: rgb(196, 160, 196);
-  font-size: 1em;
-  background: linear-gradient(100deg, #ccffff, #ffcccc);
-  height: 100vh;
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
 }
 
 img {
@@ -18,11 +14,6 @@ img {
   background: var(--color);
   filter: blur(var(--blur)) grayscale(var(--grayscale))
     contrast(var(--contrast)) hue-rotate(var(--hue-rotate));
-}
-
-input[type="range"] {
-  -webkit-appearance: none;
-  background: rgb(196, 160, 196);
 }
 
 .flex {
@@ -33,32 +24,13 @@ input[type="range"] {
   flex-direction: column;
 }
 
-.img-responsive {
-  max-height: 20em;
-  max-width: 20em;
+.justify-between {
+  justify-content: space-between;
 }
 
-label {
-  float: left;
-  width: 8em;
-  text-align: right;
-  margin-right: -4em;
+.ma2 {
+  padding: var(--spacing-small);
 }
-
-input {
-  text-align: left;
-  cursor: pointer;
-}
-
-.input-color-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.input-color {
-  position: absolute;
-  right: 13em;
-  width: 4em;
-  height: 1em;
-  border: cadetblue;
+.ma3 {
+  padding: var(--spacing-medium);
 }
