@@ -38,12 +38,14 @@ changeColor.addEventListener("change", function () {
 });
 
 window.addEventListener("load", function () {
-  document
-    .querySelector('input[type="file"]')
-    .addEventListener("change", function () {
-      if (this.files && this.files[0]) {
-        const img = document.querySelector("img");
-        img.src = URL.createObjectURL(this.files[0]);
-      }
-    });
+  const fileInput = document.querySelector('input[type="file"]');
+
+  fileInput.addEventListener("change", function () {
+    if (this.files && this.files[0]) {
+      const img = document.querySelector("img");
+      img.src = URL.createObjectURL(this.files[0]);
+    }
+  });
+
+  fileInput.value = "";
 });
