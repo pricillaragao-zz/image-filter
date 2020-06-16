@@ -1,40 +1,41 @@
-const sliderBlur = document.getElementById("blur");
+const blurInput = document.getElementById("blur");
 
-sliderBlur.addEventListener("change", function () {
+blurInput.addEventListener("change", function () {
   document.documentElement.style.setProperty("--blur", `${this.value}px`);
 });
 
-const sliderSize = document.getElementById("border-size");
+const borderSizeInput = document.getElementById("border-size");
 
-sliderSize.addEventListener("change", function () {
+borderSizeInput.addEventListener("change", function () {
   document.documentElement.style.setProperty("--size", `${this.value}px`);
 });
 
-const grayScale = document.getElementById("grayscale");
+const grayScaleInput = document.getElementById("grayscale");
 
-grayScale.addEventListener("change", function () {
+grayScaleInput.addEventListener("change", function () {
   document.documentElement.style.setProperty("--grayscale", `${this.value}%`);
 });
 
-const contrast = document.getElementById("contrast");
+const contrastInput = document.getElementById("contrast");
 
-contrast.addEventListener("change", function () {
+contrastInput.addEventListener("change", function () {
   document.documentElement.style.setProperty("--contrast", `${this.value}%`);
 });
 
-const hueRotate = document.getElementById("hue-rotate");
+const hueRotateInput = document.getElementById("hue-rotate");
 
-hueRotate.addEventListener("change", function () {
+hueRotateInput.addEventListener("change", function () {
   document.documentElement.style.setProperty(
     "--hue-rotate",
     `${this.value}deg`
   );
 });
 
-const changeColor = document.getElementById("change-color");
+const changeColorInput = document.getElementById("change-color");
 
-changeColor.addEventListener("change", function () {
+changeColorInput.addEventListener("change", function () {
   document.documentElement.style.setProperty("--color", this.value);
+  borderSizeInput.removeAttribute("disabled");
 });
 
 window.addEventListener("load", function () {
