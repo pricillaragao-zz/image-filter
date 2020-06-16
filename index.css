@@ -30,7 +30,7 @@ input[type="range"] {
   flex-direction: column;
 }
 
-.flex-gap {
+.flex-gap-0 {
   gap: 0.5em;
 }
 
@@ -53,26 +53,29 @@ input[type="range"] {
   align-items: flex-end;
 }
 
-.self-start {
-  align-self: flex-start;
-}
-
-.self-stretch {
-  align-self: stretch;
+.self-center {
+  align-content: center;
 }
 
 .w-30 {
   width: 30%;
 }
 
-.w-50 {
-  width: 50%;
-}
-
 .w-100 {
   width: 100%;
 }
 
+.mw-80 {
+  max-width: 80%;
+}
+.mw-100 {
+  max-width: 100%;
+}
+
 .tr {
   text-align: right;
+}
+
+.tc {
+  text-align: center;
 }

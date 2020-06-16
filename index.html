@@ -26,10 +26,10 @@
 
   <body>
     <main>
-      <div class="flex flex-column justify-center items-center">
+      <div class="flex flex-column justify-center items-center flex-gap-0">
         <h2 class="">Edit your image here: &#128522;</h2>
 
-        <div class="flex flex-column flex-gap">
+        <div class="flex flex-column flex-gap-0">
           <div class="w-100 flex">
             <label class="w-30 tr" for="border-size">Border size:&nbsp;</label>
             <input
@@ -107,10 +107,13 @@
           </div>
         </div>
 
-        <div class="">
-          <img class="" id="user-img" src="#" alt="" class="img-responsive" />
-          <br />
-          <input type="file" class="" />
+        <div class="mw-100">
+          <p class="tc">
+            <input type="file" />
+          </p>
+          <p class="w-100 tc">
+            <img class="mw-80" id="user-img" src="#" alt="" />
+          </p>
         </div>
       </div>
     </main>
