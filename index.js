@@ -1,10 +1,10 @@
-const sliderBlur = document.getElementById("sliderblur");
+const sliderBlur = document.getElementById("blur");
 
 sliderBlur.addEventListener("change", function () {
   document.documentElement.style.setProperty("--blur", `${this.value}px`);
 });
 
-const sliderSize = document.getElementById("slidersize");
+const sliderSize = document.getElementById("border-size");
 
 sliderSize.addEventListener("change", function () {
   document.documentElement.style.setProperty("--size", `${this.value}px`);

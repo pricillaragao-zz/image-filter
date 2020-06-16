@@ -25,86 +25,95 @@
   </head>
 
   <body>
-    <h2>Edit your image here: &#128522;</h2>
+    <main>
+      <div class="flex flex-column justify-center items-center">
+        <h2 class="">Edit your image here: &#128522;</h2>
 
-    <div class="controls flex flex-column ma3">
-      <div class="flex justify-between">
-        <label for="size">Border size:</label>
-        <input
-          id="slidersize"
-          type="range"
-          name="size"
-          min="0"
-          max="40"
-          data-size="px"
-        />
+        <div class="flex flex-column flex-gap">
+          <div class="w-100 flex">
+            <label class="w-30 tr" for="border-size">Border size:&nbsp;</label>
+            <input
+              class=""
+              id="border-size"
+              type="range"
+              name="size"
+              min="0"
+              max="40"
+              data-size="px"
+            />
+          </div>
+
+          <div class="w-100 flex">
+            <label class="w-30 tr" for="blur">Blur:&nbsp;</label>
+            <input
+              class=""
+              id="blur"
+              type="range"
+              name="blur"
+              min="0"
+              max="25"
+              data-size="px"
+            />
+          </div>
+
+          <div class="w-100 flex">
+            <label class="w-30 tr" for="grayscale">Grayscale:&nbsp;</label>
+            <input
+              class=""
+              id="grayscale"
+              type="range"
+              name="grayscale"
+              min="0"
+              max="100"
+              data-size="%"
+            />
+          </div>
+
+          <div class="w-100 flex">
+            <label class="w-30 tr" for="contrast">Contrast:&nbsp;</label>
+            <input
+              class=""
+              id="contrast"
+              type="range"
+              name="contrast"
+              min="40"
+              max="200"
+              data-size="%"
+            />
+          </div>
+
+          <div class="w-100 flex">
+            <label class="w-30 tr" for="hue-rotate">Hue:&nbsp;</label>
+            <input
+              class=""
+              id="hue-rotate"
+              type="range"
+              name="hue-rotate"
+              min="0"
+              max="180"
+              data-size="deg"
+            />
+          </div>
+
+          <div class="w-100 flex">
+            <label class="w-30 tr" for="change-color">Color:&nbsp;</label>
+            <input
+              class=""
+              id="change-color"
+              type="color"
+              name="color"
+              class="input-color"
+            />
+          </div>
+        </div>
+
+        <div class="">
+          <img class="" id="user-img" src="#" alt="" class="img-responsive" />
+          <br />
+          <input type="file" class="" />
+        </div>
       </div>
-
-      <div class="flex justify-between">
-        <label for="blur">Blur:</label>
-        <input
-          class="a"
-          id="sliderblur"
-          type="range"
-          name="blur"
-          min="0"
-          max="25"
-          data-size="px"
-        />
-      </div>
-
-      <div class="flex justify-between">
-        <label for="grayscale">Grayscale:</label>
-        <input
-          id="grayscale"
-          type="range"
-          name="grayscale"
-          min="0"
-          max="100"
-          data-size="%"
-        />
-      </div>
-
-      <div class="flex justify-between">
-        <label for="contrast">Contrast:</label>
-        <input
-          id="contrast"
-          type="range"
-          name="contrast"
-          min="40"
-          max="200"
-          data-size="%"
-        />
-      </div>
-
-      <div class="flex justify-between">
-        <label for="hue-rotate">Hue:</label>
-        <input
-          id="hue-rotate"
-          type="range"
-          name="hue-rotate"
-          min="0"
-          max="180"
-          data-size="deg"
-        />
-      </div>
-
-      <div class="input-color-container">
-        <label for="color">Color:</label>
-        <input
-          id="change-color"
-          type="color"
-          name="color"
-          class="input-color"
-        />
-      </div>
-
-      <div>
-        <img id="myImg" src="#" alt="" class="img-responsive" /> <br />
-        <input type="file" class="custom-file-input" />
-      </div>
-    </div>
-
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

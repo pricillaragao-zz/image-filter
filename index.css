@@ -7,13 +7,19 @@
   --hue-rotate: 0deg;
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
+  font-family: "Boogaloo", cursive;
 }
 
-img {
+#user-img {
   padding: var(--size);
   background: var(--color);
   filter: blur(var(--blur)) grayscale(var(--grayscale))
     contrast(var(--contrast)) hue-rotate(var(--hue-rotate));
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: rgb(196, 160, 196);
 }
 
 .flex {
@@ -24,13 +30,49 @@ img {
   flex-direction: column;
 }
 
+.flex-gap {
+  gap: 0.5em;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
-.ma2 {
-  padding: var(--spacing-small);
+.justify-end {
+  justify-content: flex-end;
 }
-.ma3 {
-  padding: var(--spacing-medium);
+
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.tr {
+  text-align: right;
 }
