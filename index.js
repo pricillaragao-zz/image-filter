@@ -46,6 +46,4 @@ window.addEventListener("load", function () {
       img.src = URL.createObjectURL(this.files[0]);
     }
   });
-
-  fileInput.value = "";
 });
