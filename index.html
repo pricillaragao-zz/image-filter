@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
     </style>
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -115,13 +115,22 @@
         </div>
 
         <div>
-          <p>
-            <input class="" type="file" autocomplete="off" class="pointer" />
+          <p class="tc">
+            <input
+              id="user-img-input"
+              type="file"
+              autocomplete="off"
+              class="pointer"
+            />
           </p>
 
-          <p>
+          <p class="tc">
             <img class="mw-80" id="user-img" src="#" alt="" />
           </p>
+        </div>
+
+        <div>
+          <a id="user-img-download"><button type="button">Download</button></a>
         </div>
       </div>
     </main>
