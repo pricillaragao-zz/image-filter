@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Boogaloo", cursive;
+  font-family: 'Boogaloo', cursive;
   color: rgb(196, 160, 196);
   background: linear-gradient(100deg, #ccffff, #ffcccc);
   height: 100vh;
@@ -23,7 +23,7 @@ body {
     contrast(var(--contrast)) hue-rotate(var(--hue-rotate));
 }
 
-input[type="range"] {
+input[type='range'] {
   -webkit-appearance: none;
   background: rgb(196, 160, 196);
 }
