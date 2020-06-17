@@ -48,3 +48,12 @@ window.addEventListener("load", function () {
     }
   });
 });
+
+// const downloadImageEdited = document.getElementById("btn");
+
+// document
+//   .querySelector("a")
+//   .addEventListener(
+//     "click",
+//     (event) => (event.target.href = downloadImageEdited.toDataURL())
+//   );
