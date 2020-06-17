@@ -13,6 +13,7 @@ body {
   font-family: "Boogaloo", cursive;
   color: rgb(196, 160, 196);
   background: linear-gradient(100deg, #ccffff, #ffcccc);
+  height: 100vh;
 }
 
 #user-img {
@@ -59,7 +60,7 @@ input[type="range"] {
 }
 
 .self-center {
-  align-content: center;
+  align-self: center;
 }
 
 .w-30 {
@@ -83,4 +84,8 @@ input[type="range"] {
 
 .tc {
   text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
 }
