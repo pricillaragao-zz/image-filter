@@ -1,41 +1,60 @@
-const blurInput = document.getElementById('blur')
+const setBlurControl = () => {
+  const blurInput = document.getElementById('blur')
 
-blurInput.addEventListener('change', function () {
-  document.documentElement.style.setProperty('--blur', `${this.value}px`)
-})
+  blurInput.addEventListener('change', function () {
+    document.documentElement.style.setProperty('--blur', `${this.value}px`)
+  })
+}
 
-const borderSizeInput = document.getElementById('border-size')
+const getBorderSizeInput = () => {
+  return document.getElementById('border-size')
+}
 
-borderSizeInput.addEventListener('change', function () {
-  document.documentElement.style.setProperty('--size', `${this.value}px`)
-})
+const setBorderControl = () => {
+  const borderSizeInput = getBorderSizeInput()
 
-const grayScaleInput = document.getElementById('grayscale')
+  borderSizeInput.addEventListener('change', function () {
+    document.documentElement.style.setProperty('--size', `${this.value}px`)
+  })
+}
 
-grayScaleInput.addEventListener('change', function () {
-  document.documentElement.style.setProperty('--grayscale', `${this.value}%`)
-})
+const setGrayScaleControl = () => {
+  const grayScaleInput = document.getElementById('grayscale')
 
-const contrastInput = document.getElementById('contrast')
+  grayScaleInput.addEventListener('change', function () {
+    document.documentElement.style.setProperty('--grayscale', `${this.value}%`)
+  })
+}
 
-contrastInput.addEventListener('change', function () {
-  document.documentElement.style.setProperty('--contrast', `${this.value}%`)
-})
+const setContrastControl = () => {
+  const contrastInput = document.getElementById('contrast')
 
-const hueRotateInput = document.getElementById('hue-rotate')
+  contrastInput.addEventListener('change', function () {
+    document.documentElement.style.setProperty('--contrast', `${this.value}%`)
+  })
+}
 
-hueRotateInput.addEventListener('change', function () {
-  document.documentElement.style.setProperty('--hue-rotate', `${this.value}deg`)
-})
+const setHueRotateControl = () => {
+  const hueRotateInput = document.getElementById('hue-rotate')
 
-const changeColorInput = document.getElementById('change-color')
+  hueRotateInput.addEventListener('change', function () {
+    document.documentElement.style.setProperty(
+      '--hue-rotate',
+      `${this.value}deg`
+    )
+  })
+}
 
-changeColorInput.addEventListener('change', function () {
-  document.documentElement.style.setProperty('--color', this.value)
-  borderSizeInput.removeAttribute('disabled')
-})
+const setChangeColorControl = () => {
+  const changeColorInput = document.getElementById('change-color')
 
-window.addEventListener('load', function () {
+  changeColorInput.addEventListener('change', function () {
+    document.documentElement.style.setProperty('--color', this.value)
+    getBorderSizeInput().removeAttribute('disabled')
+  })
+}
+
+const setImgInput = () => {
   const userImgInput = document.getElementById('user-img-input')
 
   userImgInput.addEventListener('change', function () {
@@ -44,13 +63,20 @@ window.addEventListener('load', function () {
 
       const userImg = document.getElementById('user-img')
       userImg.src = URL.createObjectURL(file)
-
-      const imgDownloadAnchor = document.getElementById('user-img-download')
-      const filename = file.name
-      const blob = new Blob([file])
-      const url = URL.createObjectURL(blob)
-      imgDownloadAnchor.setAttribute('download', `edited-${filename}`)
-      imgDownloadAnchor.setAttribute('href', url)
     }
   })
-})
+}
+
+window.onload = () => {
+  const init = () => {
+    setBlurControl()
+    setBorderControl()
+    setGrayScaleControl()
+    setContrastControl()
+    setHueRotateControl()
+    setChangeColorControl()
+    setImgInput()
+  }
+
+  init()
+}

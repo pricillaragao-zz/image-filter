@@ -1,7 +1,13 @@
 # Image Filter
 
-Manipulate your images:
+Manipulate your images with the following options:
 
+- border color
+- border size
 - blur
-- size
-- color
+- grayscale
+- contrast
+- hue
+
+To do:
+Download image after editing.
